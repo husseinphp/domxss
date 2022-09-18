@@ -1,4 +1,5 @@
 #!/bin/sh
+
 #install subfinder
 docker pull projectdiscovery/subfinder
 #alias subfinder
