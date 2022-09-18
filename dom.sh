@@ -4,12 +4,19 @@ docker pull projectdiscovery/subfinder
 #alias subfinder
 alias subfinder='docker run -it --rm -w /data -v $(pwd):/data projectdiscovery/subfinder'
 #install httpx
+
 docker pull projectdiscovery/httpx
+
 #install nuclei
+
 docker pull projectdiscovery/nuclei
+
 #alias httpx
+
 alias httpx='docker run -it --rm -w /data -v $(pwd):/data projectdiscovery/httpx'
+
 #alias nuclei
+
 alias nuclei='docker run -it --rm -w /data -v $(pwd):/data projectdiscovery/nuclei'
 
 echo "subfinder & httpx &nuclei  successfully installs "
