@@ -21,4 +21,4 @@ echo "enumeration httpx  successfully  "
 httpx -l $1subdomain.txt  -o  $1live.txt
 wc -l <  $1live.txt
 #DOM-XSS-CVE-2021-24891
-nuclei -list $1live.txt -t "cves/2021/CVE-2021-24891.yaml"
+nuclei -list $1live.txt -t "cves/2021/CVE-2021-24891.yaml" -rl 10
